@@ -381,12 +381,12 @@ const PostgraduateCertificates = () => {
 };
 
 const VeterinaryCareerHub = () => {
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [activeTab, setActiveTab] = useState("overview");
   const [selectedCountry, setSelectedCountry] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [isSearchFocused, setIsSearchFocused] = useState(false);
-  const [selectedCategoryDetail, setSelectedCategoryDetail] = useState(null);
 
   // Mock data for demonstration
   const programs = [
