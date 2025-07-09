@@ -874,7 +874,7 @@ const VeterinaryCareerHub = () => {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {categories.map((category, index) => (
-                    <div key={index} className="group cursor-pointer" onClick={() => setSelectedCategoryDetail(category.id)}>
+                    <div key={index} className="group cursor-pointer" onClick={() => navigate(category.route)}>
                       <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                         <div className="h-48 bg-gradient-to-br from-blue-600 to-blue-800 relative overflow-hidden">
                           <img 
