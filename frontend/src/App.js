@@ -976,6 +976,7 @@ const VeterinaryCareerHub = () => {
                 <li><a href="https://www.virmp.org/" className="hover:text-white">MATCH</a></li>
                 <li><a href="https://www.rcvs.org.uk/" className="hover:text-white">RCVS</a></li>
                 <li><a href="https://www.rcvs.org.uk/lifelong-learning/pdp/" className="hover:text-white">RCVS PDP</a></li>
+                <li><a href="https://www.avma.org/education/foreign/information-foreign-veterinary-graduates-working-veterinarian-us" className="hover:text-white">AVMA Foreign Guide</a></li>
               </ul>
             </div>
           </div>
