@@ -25,6 +25,20 @@ const VeterinaryCareerHub = () => {
       url: "https://www.virmp.org/"
     },
     {
+      title: "ECFVG Certification",
+      country: "USA",
+      category: "visa",
+      description: "Educational Commission for Foreign Veterinary Graduates - required for foreign graduates",
+      url: "https://www.avma.org/education/ecfvg"
+    },
+    {
+      title: "PAVE Program",
+      country: "USA",
+      category: "visa",
+      description: "Program for the Assessment of Veterinary Education Equivalence",
+      url: "https://www.aavsb.org/student-services/preparing-for-licensure"
+    },
+    {
       title: "RVC CertAVP",
       country: "UK",
       category: "certificate",
@@ -53,11 +67,25 @@ const VeterinaryCareerHub = () => {
       url: "https://www.rcvs.org.uk/lifelong-learning/pdp/"
     },
     {
+      title: "RCVS Registration",
+      country: "UK",
+      category: "visa",
+      description: "Registration requirements for foreign veterinarians in the UK",
+      url: "https://www.rcvs.org.uk/registration/"
+    },
+    {
       title: "Canadian Veterinary Medical Association",
       country: "Canada",
       category: "licensing",
       description: "Resources for veterinary licensing in Canada",
       url: "https://www.canadianveterinarians.net/"
+    },
+    {
+      title: "NEB Exams Canada",
+      country: "Canada",
+      category: "visa",
+      description: "National Examining Board requirements for foreign veterinary graduates",
+      url: "https://www.cvma-acmv.org/"
     }
   ];
 
