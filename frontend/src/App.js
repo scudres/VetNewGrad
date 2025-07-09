@@ -1386,6 +1386,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<VeterinaryCareerHub />} />
+          <Route path="/training-programs" element={<TrainingPrograms />} />
+          <Route path="/internships-residencies" element={<InternshipsResidencies />} />
+          <Route path="/postgraduate-certificates" element={<PostgraduateCertificates />} />
         </Routes>
       </BrowserRouter>
     </div>
