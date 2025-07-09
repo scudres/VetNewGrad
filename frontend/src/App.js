@@ -101,19 +101,34 @@ const VeterinaryCareerHub = () => {
       name: "United Kingdom",
       code: "UK",
       image: "https://images.unsplash.com/photo-1659019479789-4dd5dbdc2cb1",
-      highlights: ["RCVS Registration", "CertAVP Programs", "NHS Opportunities"]
+      highlights: ["RCVS Registration", "CertAVP Programs", "NHS Opportunities"],
+      visaInfo: {
+        euCitizens: "Post-Brexit: EU citizens need Skilled Worker Visa with job offer from UK sponsor",
+        nonEuCitizens: "Skilled Worker Visa required with job offer from licensed UK sponsor",
+        additionalReqs: "RCVS registration mandatory, English proficiency may be required"
+      }
     },
     {
       name: "United States",
       code: "USA",
       image: "https://images.pexels.com/photos/6075005/pexels-photo-6075005.jpeg",
-      highlights: ["NAVLE Examination", "MATCH Program", "State Licensing"]
+      highlights: ["NAVLE Examination", "MATCH Program", "State Licensing"],
+      visaInfo: {
+        foreignGrads: "Work visa required (contact U.S. Department of State)",
+        educationReqs: "ECFVG or PAVE certification for non-AVMA accredited graduates",
+        additionalReqs: "NAVLE exam + state-specific licensing requirements"
+      }
     },
     {
       name: "Canada",
       code: "Canada",
       image: "https://images.unsplash.com/photo-1629280301895-a098bd9c4a67",
-      highlights: ["Provincial Licensing", "CVMA Resources", "Rural Opportunities"]
+      highlights: ["Provincial Licensing", "CVMA Resources", "Rural Opportunities"],
+      visaInfo: {
+        foreignGrads: "Work visa through Federal Skilled Worker Program or Provincial Nominee Program",
+        educationReqs: "Educational Credential Assessment (ECA) + NEB exams (BCSE + NAVLE)",
+        additionalReqs: "Provincial licensing + English/French proficiency"
+      }
     }
   ];
 
