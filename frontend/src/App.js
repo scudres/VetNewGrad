@@ -519,21 +519,24 @@ const VeterinaryCareerHub = () => {
       icon: "🎓",
       image: "https://images.pexels.com/photos/7663144/pexels-photo-7663144.jpeg",
       description: "Comprehensive post-graduate training programs for new veterinary graduates",
-      id: "training"
+      id: "training",
+      route: "/training-programs"
     },
     {
       title: "Internships & Residencies",
       icon: "🏥",
       image: "https://images.unsplash.com/photo-1596058939740-516d0d71f3d4",
       description: "Specialized internship and residency opportunities through MATCH and European programs",
-      id: "internships"
+      id: "internships",
+      route: "/internships-residencies"
     },
     {
       title: "Postgraduate Certificates",
       icon: "📜",
       image: "https://images.pexels.com/photos/8325952/pexels-photo-8325952.jpeg",
       description: "Advanced certificates and continuing education programs including CertAVP",
-      id: "certificates"
+      id: "certificates",
+      route: "/postgraduate-certificates"
     }
   ];
 
