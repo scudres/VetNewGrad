@@ -493,7 +493,7 @@ const VeterinaryCareerHub = () => {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {categories.map((category, index) => (
-                    <div key={index} className="group">
+                    <div key={index} className="group cursor-pointer" onClick={() => setSelectedCategoryDetail(category.id)}>
                       <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                         <div className="h-48 bg-gradient-to-br from-blue-600 to-blue-800 relative overflow-hidden">
                           <img 
@@ -508,7 +508,13 @@ const VeterinaryCareerHub = () => {
                         </div>
                         <div className="p-6">
                           <h3 className="text-xl font-semibold text-gray-900 mb-3">{category.title}</h3>
-                          <p className="text-gray-600">{category.description}</p>
+                          <p className="text-gray-600 mb-4">{category.description}</p>
+                          <div className="flex items-center text-blue-600 font-medium">
+                            <span>Click to explore</span>
+                            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                          </div>
                         </div>
                       </div>
                     </div>
