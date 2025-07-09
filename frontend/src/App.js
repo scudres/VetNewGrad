@@ -634,6 +634,270 @@ const VeterinaryCareerHub = () => {
             </div>
           )}
 
+          {/* Visa & Licensing Tab */}
+          {activeTab === "visa" && (
+            <div className="space-y-12">
+              <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
+                Visa & Licensing Requirements
+              </h2>
+              
+              <div className="space-y-8">
+                {/* USA Section */}
+                <div className="bg-white rounded-xl p-8 shadow-lg">
+                  <h3 className="text-3xl font-bold text-blue-600 mb-6 flex items-center">
+                    🇺🇸 United States
+                  </h3>
+                  
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-4">Visa Requirements</h4>
+                      <div className="bg-blue-50 p-6 rounded-lg">
+                        <ul className="space-y-3 text-gray-700">
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span>Non-U.S. citizens need appropriate work visa</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span>Contact U.S. Department of State for visa categories</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span>AVMA does not influence visa issuance</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span>Secure employment separately from licensing</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-4">Educational Equivalency</h4>
+                      <div className="space-y-4">
+                        <div className="bg-green-50 p-4 rounded-lg">
+                          <h5 className="font-semibold text-green-900 mb-2">ECFVG Certification</h5>
+                          <p className="text-sm text-gray-700">For graduates from non-AVMA accredited schools</p>
+                          <ul className="text-sm text-gray-600 mt-2 space-y-1">
+                            <li>• English language proficiency</li>
+                            <li>• Basic & clinical sciences exam</li>
+                            <li>• Clinical skills assessment</li>
+                          </ul>
+                        </div>
+                        
+                        <div className="bg-yellow-50 p-4 rounded-lg">
+                          <h5 className="font-semibold text-yellow-900 mb-2">PAVE Program</h5>
+                          <p className="text-sm text-gray-700">Alternative equivalency pathway by AAVSB</p>
+                          <p className="text-sm text-yellow-700 mt-2">Verify state acceptance before choosing</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-8">
+                    <h4 className="text-xl font-semibold text-gray-900 mb-4">State Licensing Process</h4>
+                    <div className="bg-gray-50 p-6 rounded-lg">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                          <h5 className="font-semibold text-gray-900 mb-3">Step 1: NAVLE Exam</h5>
+                          <ul className="text-sm text-gray-700 space-y-1">
+                            <li>• Required by all 50 states</li>
+                            <li>• 360 multiple-choice questions</li>
+                            <li>• Covers all veterinary medicine aspects</li>
+                            <li>• Offered during specific testing windows</li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h5 className="font-semibold text-gray-900 mb-3">Step 2: State Requirements</h5>
+                          <ul className="text-sm text-gray-700 space-y-1">
+                            <li>• Each state has unique requirements</li>
+                            <li>• Some require jurisprudence exams</li>
+                            <li>• Additional fees and documentation</li>
+                            <li>• Contact specific state board</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-6 p-4 bg-red-50 rounded-lg border border-red-200">
+                    <p className="text-sm text-red-800">
+                      <strong>⚠️ Important:</strong> State requirements vary significantly. Always verify with the specific state veterinary board where you plan to practice.
+                    </p>
+                  </div>
+                </div>
+                
+                {/* UK Section */}
+                <div className="bg-white rounded-xl p-8 shadow-lg">
+                  <h3 className="text-3xl font-bold text-blue-600 mb-6 flex items-center">
+                    🇬🇧 United Kingdom
+                  </h3>
+                  
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-4">Post-Brexit Visa Requirements</h4>
+                      
+                      <div className="space-y-4">
+                        <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                          <h5 className="font-semibold text-blue-900 mb-2">EU Citizens</h5>
+                          <ul className="text-sm text-gray-700 space-y-1">
+                            <li>• Skilled Worker Visa required</li>
+                            <li>• Job offer from UK sponsor needed</li>
+                            <li>• Employer must hold valid sponsor license</li>
+                            <li>• No longer automatic right to work</li>
+                          </ul>
+                        </div>
+                        
+                        <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+                          <h5 className="font-semibold text-green-900 mb-2">Non-EU Citizens</h5>
+                          <ul className="text-sm text-gray-700 space-y-1">
+                            <li>• Skilled Worker Visa required</li>
+                            <li>• Job offer from licensed UK sponsor</li>
+                            <li>• May need additional assessments</li>
+                            <li>• Immigration skills charge applies</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-4">RCVS Registration</h4>
+                      <div className="bg-gray-50 p-6 rounded-lg">
+                        <ul className="space-y-3 text-gray-700">
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span>Registration with RCVS is mandatory</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span>EU qualifications may be recognized</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span>Non-EU degrees require assessment</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span>English proficiency may be required</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span>Health and safety compliance needed</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <p className="text-sm text-blue-800">
+                      <strong>✅ Process:</strong> Secure job offer → Apply for visa → Complete RCVS registration → Undergo health checks
+                    </p>
+                  </div>
+                </div>
+                
+                {/* Canada Section */}
+                <div className="bg-white rounded-xl p-8 shadow-lg">
+                  <h3 className="text-3xl font-bold text-blue-600 mb-6 flex items-center">
+                    🇨🇦 Canada
+                  </h3>
+                  
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-4">Immigration Pathways</h4>
+                      <div className="space-y-4">
+                        <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+                          <h5 className="font-semibold text-red-900 mb-2">Federal Skilled Worker</h5>
+                          <ul className="text-sm text-gray-700 space-y-1">
+                            <li>• Points-based system</li>
+                            <li>• Language proficiency required</li>
+                            <li>• Educational credentials assessed</li>
+                            <li>• Work experience evaluated</li>
+                          </ul>
+                        </div>
+                        
+                        <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
+                          <h5 className="font-semibold text-purple-900 mb-2">Provincial Nominee Program</h5>
+                          <ul className="text-sm text-gray-700 space-y-1">
+                            <li>• Province-specific requirements</li>
+                            <li>• Job offer may be required</li>
+                            <li>• Faster processing possible</li>
+                            <li>• Must intend to live in province</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-4">Education & Licensing</h4>
+                      <div className="bg-gray-50 p-6 rounded-lg">
+                        <ul className="space-y-3 text-gray-700">
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span><strong>ECA:</strong> Educational Credential Assessment through CVMA</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span><strong>NEB Exams:</strong> BCSE + NAVLE required</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span><strong>Provincial License:</strong> Each province has requirements</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span><strong>Language:</strong> English or French proficiency</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-8">
+                    <h4 className="text-xl font-semibold text-gray-900 mb-4">Step-by-Step Process</h4>
+                    <div className="bg-green-50 p-6 rounded-lg">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                          <ol className="space-y-2 text-gray-700">
+                            <li className="flex items-start">
+                              <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">1</span>
+                              <span><strong>ECA:</strong> Assess degree equivalency</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">2</span>
+                              <span><strong>NEB:</strong> Pass required exams</span>
+                            </li>
+                          </ol>
+                        </div>
+                        
+                        <div>
+                          <ol className="space-y-2 text-gray-700" start="3">
+                            <li className="flex items-start">
+                              <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">3</span>
+                              <span><strong>Provincial:</strong> Apply for license</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">4</span>
+                              <span><strong>Immigration:</strong> Apply for visa</span>
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-6 p-4 bg-green-50 rounded-lg border border-green-200">
+                    <p className="text-sm text-green-800">
+                      <strong>💡 Tip:</strong> Contact both CVMA and provincial regulatory bodies for the most current requirements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Programs Tab */}
           {activeTab === "programs" && (
             <div className="space-y-12">
