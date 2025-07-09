@@ -265,6 +265,18 @@ const VeterinaryCareerHub = () => {
                   <option value="USA">United States</option>
                   <option value="Canada">Canada</option>
                 </select>
+                <select
+                  value={selectedCategory}
+                  onChange={(e) => setSelectedCategory(e.target.value)}
+                  className="px-4 py-2 bg-white bg-opacity-20 text-white rounded-lg border border-white border-opacity-30 focus:ring-2 focus:ring-blue-300 focus:outline-none backdrop-blur-sm"
+                >
+                  <option value="">All Categories</option>
+                  <option value="visa">Visa & Immigration</option>
+                  <option value="licensing">Licensing</option>
+                  <option value="internship">Internships</option>
+                  <option value="certificate">Certificates</option>
+                  <option value="development">Development</option>
+                </select>
               </div>
             </div>
           </div>
