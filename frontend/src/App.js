@@ -94,7 +94,8 @@ const VeterinaryCareerHub = () => {
     const matchesSearch = program.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          program.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCountry = selectedCountry === "" || program.country === selectedCountry;
-    return matchesSearch && matchesCountry;
+    const matchesCategory = selectedCategory === "" || program.category === selectedCategory;
+    return matchesSearch && matchesCountry && matchesCategory;
   });
 
   const countries = [
