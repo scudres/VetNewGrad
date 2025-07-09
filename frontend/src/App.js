@@ -6,6 +6,7 @@ const VeterinaryCareerHub = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [activeTab, setActiveTab] = useState("overview");
   const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   // Mock data for demonstration
