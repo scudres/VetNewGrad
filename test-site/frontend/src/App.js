@@ -5,6 +5,8 @@ import InternshipsResidencies from "./components/InternshipsResidencies";
 import PostgraduateCertificates from "./components/PostgraduateCertificates";
 import VeterinaryCareerHub from "./components/VeterinaryCareerHub";
 import CPDConferences from "./components/CPDConferences";
+import JobOpportunities from "./components/jobopportunities";
+
 import "./App.css";
 
 function App() {
@@ -16,7 +18,8 @@ function App() {
           <Route path="/training-programs" element={<TrainingPrograms />} />
           <Route path="/internships-residencies" element={<InternshipsResidencies />} />
           <Route path="/postgraduate-certificates" element={<PostgraduateCertificates />} />
-          <Route path="/cpd-conferences" element={<CPDConferences />} />  {/* <-- ADD THIS LINE */}
+          <Route path="/cpd-conferences" element={<CPDConferences />} /> 
+          <Route path="/job-opportunities" element={<JobOpportunities />} />
         </Routes>
       </BrowserRouter>
     </div>
