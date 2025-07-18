@@ -382,7 +382,7 @@ const InternshipsResidencies = () => {
   useEffect(() => {
     setLoading(true);
     setError(false);
-    fetch("https://vetjobs-api.onrender.com/api/jobs")
+    fetch("https://vetjobs-api.onrender.com/api/internships-residencies")
       .then(res => res.json())
       .then(data => {
         setDynamicJobs(data);
