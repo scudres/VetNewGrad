@@ -7,7 +7,8 @@ const jobBoards = [ // UK
   {
     title: "Vet Times Jobs",
     url: "https://jobs.vettimes.co.uk/",
-    country: "UK",
+    country: "United Kingdom",
+    city: "nationwide",
     types: ["small animal", "farm animal", "equine", "exotic", "mixed"],
     sectors: ["private", "academic"],
     practice: ["independent", "corporate"]
@@ -15,7 +16,8 @@ const jobBoards = [ // UK
   {
     title: "VetPartners",
     url: "https://www.vetpartnersjobs.co.uk/",
-    country: "UK",
+    country: "United Kingdom",
+    city: "nationwide",
     types: ["small animal", "equine", "mixed"],
     sectors: ["private"],
     practice: ["corporate"]
@@ -23,7 +25,8 @@ const jobBoards = [ // UK
   {
     title: "Veterinary Jobs Marketplace",
     url: "https://www.veterinaryjobsmarketplace.com/jobs/uk/",
-    country: "UK",
+    country: "United Kingdom",
+    city: "nationwide",
     types: ["small animal", "farm animal", "equine", "exotic", "mixed"],
     sectors: ["private", "academic"],
     practice: ["independent", "corporate"]
@@ -32,7 +35,8 @@ const jobBoards = [ // UK
   {
     title: "AVMA Career Center",
     url: "https://jobs.avma.org/",
-    country: "USA",
+    country: "United States of America",
+    city: "nationwide",
     types: ["small animal", "farm animal", "equine", "exotic", "mixed"],
     sectors: ["private", "academic"],
     practice: ["independent", "corporate"]
@@ -40,7 +44,8 @@ const jobBoards = [ // UK
   {
     title: "ACVS Job Board",
     url: "https://jobs.acvs.org/",
-    country: "USA",
+    country: "United States of America",
+    city: "nationwide",
     types: ["small animal", "equine", "exotic"],
     sectors: ["private", "academic"],
     practice: ["independent", "corporate"]
@@ -48,7 +53,8 @@ const jobBoards = [ // UK
   {
     title: "Veterinary Jobs Marketplace",
     url: "https://www.veterinaryjobsmarketplace.com/jobs/usa/",
-    country: "USA",
+    country: "United States of America",
+    city: "nationwide",
     types: ["small animal", "farm animal", "equine", "exotic", "mixed"],
     sectors: ["private", "academic"],
     practice: ["independent", "corporate"]
@@ -56,7 +62,8 @@ const jobBoards = [ // UK
   {
     title: "My Veterinary Job Board",
     url: "https://myveterinaryjobboard.com/",
-    country: "USA",
+    country: "United States of America",
+    city: "nationwide",
     types: ["small animal", "farm animal", "equine", "exotic", "mixed"],
     sectors: ["private", "academic"],
     practice: ["independent", "corporate"]
@@ -64,7 +71,8 @@ const jobBoards = [ // UK
   {
     title: "VOS/Ethos",
     url: "https://veterinaryos.com/jobs/",
-    country: "USA",
+    country: "United States of America",
+    city: "nationwide",
     types: ["small animal", "equine"],
     sectors: ["private", "academic"],
     practice: ["independent", "corporate"]
@@ -74,6 +82,7 @@ const jobBoards = [ // UK
     title: "Veterinary Jobs Marketplace",
     url: "https://www.veterinaryjobsmarketplace.com/jobs/canada/",
     country: "Canada",
+    city: "nationwide",
     types: ["small animal", "farm animal", "equine", "exotic", "mixed"],
     sectors: ["private", "academic"],
     practice: ["independent", "corporate"]
@@ -82,6 +91,7 @@ const jobBoards = [ // UK
     title: "VOS/Ethos",
     url: "https://veterinaryos.com/jobs/",
     country: "Canada",
+    city: "nationwide",
     types: ["small animal", "equine"],
     sectors: ["private", "academic"],
     practice: ["independent", "corporate"]
