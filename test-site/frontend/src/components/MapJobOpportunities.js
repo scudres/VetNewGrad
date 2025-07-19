@@ -35,13 +35,10 @@ function normalizeCountryName(name) {
     .replace(/^scotland$/i, "United Kingdom")
     .replace(/^wales$/i, "United Kingdom")
     .replace(/^northern ireland$/i, "United Kingdom")
-    .replace(/^usa$/i, "United States of America")
-    .replace(/^us$/i, "United States of America")
-    .replace(/^u\.s\.a\.$/i, "United States of America")
-    // Add more rules as needed!
-    .replace(/ +/g, " ")
-    .toLowerCase()
-    .replace(/\b\w/g, c => c.toUpperCase());
+    .replace(/^(usa|us|u\.s\.a\.|united states|united states of america)$/i, "United States of America")
+    // etc...
+    .replace(/ +/g, " ");
+    // <-- Remove the .toLowerCase() and .replace(/\b\w/g, c => c.toUpperCase())
 }
 
 // --- Find the centroid of a GeoJSON polygon for a country ---
@@ -114,9 +111,21 @@ function MapJobOpportunities({ jobs, selectedCountry, setSelectedCountry }) {
         const country = normalizeCountryName(job.country);
         const city = job.city && job.city.toLowerCase() !== "nationwide" ? job.city : null;
 
-        // Use any present lat/lon field (backend-first)
-        const lat = job.latitude ?? job.lat;
-        const lng = job.longitude ?? job.lon ?? job.lng;
+        // --- PRIORITY: Use backend-provided lat/lon fields ---
+        const lat =
+          typeof job.latitude !== "undefined"
+            ? job.latitude
+            : typeof job.lat !== "undefined"
+            ? job.lat
+            : undefined;
+        const lng =
+          typeof job.longitude !== "undefined"
+            ? job.longitude
+            : typeof job.lon !== "undefined"
+            ? job.lon
+            : typeof job.lng !== "undefined"
+            ? job.lng
+            : undefined;
         if (
           typeof lat !== "undefined" &&
           typeof lng !== "undefined" &&
